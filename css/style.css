@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 24pt;
+    font-family: 'Roboto';
+    margin-right: 20vh;
+}
+
+.sections {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.section1 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-color: rgb(250, 208, 156);
+    font-size: 20pt;
+    font-family: 'Roboto';
+}
+
+.section2 {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: darksalmon;
+    font-size: 20pt;
+    font-family: 'Roboto';
+}
+
+.section3 {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: rgb(173, 227, 245);
+    font-size: 20pt;
+    font-family: 'Roboto';
+}
+
+.section4 {
+    grid-column: span 3;
+    grid-row: span 3;
+    background-color: rgb(250, 243, 144);
+    font-size: 20pt;
+    font-family: 'Roboto';
+}
+span{
+    position: absolute;
+    margin: 20px;
+    color: honeydew;
+}
