@@ -24,7 +24,7 @@ main{
 }
 
 h1{
-    font-size: 24pt;
+    font-size: 45pt;
     font-family: 'Shadows Into Light Two';
     margin-right: 20vh;
 }
@@ -45,6 +45,9 @@ h1{
     background-color:rgba(182, 199, 216, 1);
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
+    background-image: url('../assets/photography.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .section2 {
@@ -53,6 +56,9 @@ h1{
     background-color:rgb(247, 224, 181);
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
+    background-image: url('../assets/digitalart.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .section3 {
@@ -61,6 +67,9 @@ h1{
     background-color: rgb(250, 185, 164);
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
+    background-image: url('../assets/drawings.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .section4 {
@@ -69,6 +78,9 @@ h1{
     background-color:rgba(206, 121, 107, 1);
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
+    background-image: url('../assets/university.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 span{
     position: absolute;
@@ -85,9 +97,26 @@ span{
     grid-template-rows: repeat(6, 1fr);
     width: 95%;
     height: 90vh;
-    background-color: rgba(102, 78, 76, 1);
-    
-    
+    background-color: rgba(102, 78, 76, 1);  
+}
+
+.bio1 {
+background-image: url('../assets/DSC_4779.JPG');    
+background-size: contain;
+background-repeat: no-repeat; 
+margin: 20px;
+margin-right: 100px;
+grid-column:span 3;
+grid-row: span 6;
+
+}
+
+
+.bio2 {
+    grid-row:span 4;
+    grid-column: span 4;
+    font-size: 30pt;
+    font-family: 'Shadows Into Light Two';
 }
 
 nav {
