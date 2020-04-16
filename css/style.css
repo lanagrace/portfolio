@@ -148,7 +148,8 @@ ul li a{
     font-size: 15px;
     font-weight: bold;
     color: black;
-    padding: 0 20px;
+    /*space between words in menu*/
+    padding: 0 60px;
 }
 
 ul li a:hover {
