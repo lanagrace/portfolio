@@ -12,7 +12,7 @@ body{
 header {
     width: 100%;
     height: 90vh;
-    background-image: url('../assets/Untitled-header.jpg');
+    background-image: url('../assets/Untitled-header2.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@ h1{
 .sections {
     display: grid;
     margin: auto;
+    margin-top: 50px;
     grid-gap: 25px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
