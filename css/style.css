@@ -40,17 +40,48 @@ h1{
     height: 100vh;
 }
 
+
+.section1:hover{
+    background-color: ivory; opacity: 0.3;
+    font-size: 20pt;
+    font-family: 'Shadows Into Light Two';
+}
+.section2:hover{
+    background-color: ivory; opacity: 0.3;
+    font-size: 20pt;
+    font-family: 'Shadows Into Light Two';
+}
+.section3:hover{
+    background-color: ivory; opacity: 0.3;
+    font-size: 20pt;
+    font-family: 'Shadows Into Light Two';
+}
+.section4:hover{
+    background-color: ivory; opacity: 0.3;   
+    font-size: 20pt;
+    font-family: 'Shadows Into Light Two';
+}
+
 .section1 {
     grid-column: span 3;
     grid-row: span 3;
     background-color:rgba(182, 199, 216, 1);
     outline-style: solid;
     outline-color: rgb(54, 55, 114);
+    background-image: url('../assets/photoicon.png');
+    background-size: cover;
+}
+#Photography .text1 {
+    position: absolute;
+    margin: 40px;
+    color: black;
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
-    background-image: url('../assets/photoicon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    visibility: hidden;
+}
+
+#Photography:hover .text1 {
+    visibility: visible;
 }
 
 .section2 {
@@ -59,11 +90,22 @@ h1{
     background-color:rgb(247, 224, 181);
     outline-style: solid;
     outline-color: rgb(161, 136, 91);
+    background-image: url('../assets/digiart.png');
+    background-size: cover;
+    background-size: contain;
+   
+}
+#DigitalArt .text2 {
+    position: absolute;
+    margin: 40px;
+    color: black;
+    visibility: hidden; 
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
-    background-image: url('../assets/digiart.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+#DigitalArt:hover .text2 {
+    visibility: visible;
 }
 
 .section3 {
@@ -72,11 +114,22 @@ h1{
     background-color: rgb(250, 185, 164);
     outline-style: solid;
     outline-color: rgb(138, 85, 78);
+    background-image: url('../assets/drawingicon.png');
+    background-size: cover;
+    align-items: center;
+}
+
+#Drawings .text3 {
+    position: absolute;
+    margin: 40px;
+    color: black;
+    visibility: hidden; 
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
-    background-image: url('../assets/drawingicon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+#Drawings:hover .text3 {
+    visibility: visible;
 }
 
 .section4 {
@@ -85,17 +138,26 @@ h1{
     background-color:rgba(206, 121, 107, 1);
     outline-style: solid;
     outline-color: rgb(143,87,80);
+    background-image: url('../assets/unip.png');
+    background-size: cover;
+}
+#UniversityProjects .text4 {
+    position: absolute;
+    margin: 40px;
+    color: black;
+    visibility: hidden; 
     font-size: 20pt;
     font-family: 'Shadows Into Light Two';
-    background-image: url('../assets/unip.png');
-    background-size: contain;
-    background-repeat: no-repeat;
 }
-span{
+
+#UniversityProjects:hover .text4 {
+    visibility: visible;
+}
+/*span{
     position: absolute;
     margin: 40px;
     color: honeydew;
-}
+}*/
 
 .bio {
     
