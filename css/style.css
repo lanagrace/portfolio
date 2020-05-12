@@ -6,17 +6,12 @@
 }
 
 body{
-    background-color:rgba(255, 238, 226, 1);
+    background-color:#ead8ce;
 }
 
 header {
+    height: 100vh;
     width: 100%;
-    height: 90vh;
-    background-image: url('../assets/Untitled-header2.jpg');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 main{
@@ -30,14 +25,21 @@ h1{
 }
 
 .sections {
-    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: center;
     margin: auto;
+    display: grid;
     margin-top: 50px;
     grid-gap: 25px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: 4fr auto;
+    grid-template-areas: "section1 right1"
+                         "section2 right2"
+                         "section3 right3"
+                         "section4 right4";
     width: 95%;
-    height: 100vh;
+
 }
 
 
@@ -63,96 +65,25 @@ h1{
 }
 
 .section1 {
-    grid-column: span 3;
-    grid-row: span 3;
-    background-color:rgba(182, 199, 216, 1);
-    outline-style: solid;
-    outline-color: rgb(54, 55, 114);
-    background-image: url('../assets/photoicon.png');
-    background-size: cover;
-}
-#Photography .text1 {
-    position: absolute;
-    margin: 40px;
-    color: black;
-    font-size: 20pt;
-    font-family: 'Shadows Into Light Two';
-    visibility: hidden;
-}
-
-#Photography:hover .text1 {
-    visibility: visible;
+    grid-area: section1;
 }
 
 .section2 {
-    grid-column: span 2;
-    grid-row: span 3;
-    background-color:rgb(247, 224, 181);
-    outline-style: solid;
-    outline-color: rgb(161, 136, 91);
-    background-image: url('../assets/digiart.png');
-    background-size: cover;
-    background-size: contain;
+    grid-area: right2;
    
-}
-#DigitalArt .text2 {
-    position: absolute;
-    margin: 40px;
-    color: black;
-    visibility: hidden; 
-    font-size: 20pt;
-    font-family: 'Shadows Into Light Two';
-}
-
-#DigitalArt:hover .text2 {
-    visibility: visible;
 }
 
 .section3 {
-    grid-column: span 2;
-    grid-row: span 3;
-    background-color: rgb(250, 185, 164);
-    outline-style: solid;
-    outline-color: rgb(138, 85, 78);
-    background-image: url('../assets/drawingicon.png');
-    background-size: cover;
-    align-items: center;
+    grid-area: section3;
+
 }
 
-#Drawings .text3 {
-    position: absolute;
-    margin: 40px;
-    color: black;
-    visibility: hidden; 
-    font-size: 20pt;
-    font-family: 'Shadows Into Light Two';
-}
-
-#Drawings:hover .text3 {
-    visibility: visible;
-}
 
 .section4 {
-    grid-column: span 3;
-    grid-row: span 3;
-    background-color:rgba(206, 121, 107, 1);
-    outline-style: solid;
-    outline-color: rgb(143,87,80);
-    background-image: url('../assets/unip.png');
-    background-size: cover;
-}
-#UniversityProjects .text4 {
-    position: absolute;
-    margin: 40px;
-    color: black;
-    visibility: hidden; 
-    font-size: 20pt;
-    font-family: 'Shadows Into Light Two';
+    grid-area: right4;
+
 }
 
-#UniversityProjects:hover .text4 {
-    visibility: visible;
-}
 /*span{
     position: absolute;
     margin: 40px;
