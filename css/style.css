@@ -31,7 +31,7 @@ hr{
     width: 50%;
     /*taken from w3schools*/
     display: block;
-    margin-top: 4em;
+    margin-top: 2em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +40,7 @@ hr{
 }
 
 .menu{
-    height: 40vh;
+    height: 31vh;
     width: 100%;
     padding-top: 3vh;
     background-color: rgb(255, 255, 255);
@@ -58,6 +58,7 @@ hr{
     margin: auto;
     display: grid;
     margin-top: 50px;
+    margin-bottom: 8vh;
     grid-gap: 25px;
     grid-template-columns: auto;
     grid-template-rows: 4fr auto;
@@ -70,7 +71,8 @@ hr{
 }
 
 .sections  > div > a > img:hover{
-    background-color: ivory; opacity: 0.3;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
 }
 
 .sections > div > a > img {
@@ -193,7 +195,7 @@ hr{
 nav {
     width: 100%;
     height: 100px;
-    margin-top: 80px;
+    margin-top: 40px;
     position: relative;
     text-align: center;
     font-family: 'Major Mono Display Regular';
@@ -209,7 +211,7 @@ ul li {
 ul li a{
     display: block;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 12pt;
     font-weight: bold;
     color: black;
     /*space between words in menu*/
