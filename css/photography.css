@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f7ede2;
+    background-color: #ead8cd;
 }
 
 main{
@@ -17,13 +17,20 @@ main{
     width: 40vh;
     height: 100%;
     background: #3d405d;
+
 }
 
 h1{
     margin-top: 4vh;
     margin-left: 2vh;
-    color: #f7ede2;
+    color: #f6bd60;
     font-family: 'Major Mono Display Regular';
+}
+
+.contentText{
+  margin-left: 2vh;
+  color: #f6bd60;
+  font-family: 'Major Mono Display Regular';
 }
 
 p{
@@ -213,4 +220,64 @@ img {vertical-align: middle;}
 @keyframes resizeOut {
     from {box-shadow: 15px 15px 35px grey;} 
     to {box-shadow: none}
+}
+
+
+
+ul.socialIcons {
+  padding: 0;
+  text-align: center;
+}
+
+.socialIcons li {
+  background-color: white;
+  list-style: none;
+  display:inline-block;
+  margin: 4px;
+  border-radius: 4em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 2.28571429em;
+  max-width: 2.28571429em;
+  height: 2.28571429em;
+  white-space: nowrap;
+  line-height: 1.2em; /* it's working only when you write text with icon */
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-left:0.1em;
+  margin-right: 1em;
+}
+
+.socialIcons .digitalart i {
+  margin-left: 0.2em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 0.3em;
+}
+
+.socialIcons .photography {
+  background-color: #3d405d;
+}
+
+.socialIcons .digitalart {
+  background-color: #f6bd60;
+}
+
+.socialIcons .drawings {
+  background-color: #f5cac3;
+}
+
+.socialIcons .uniprojects {
+  background-color: #f28482;
 }
