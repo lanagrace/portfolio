@@ -7,7 +7,7 @@
 
 body{
     align-self: center;
-    background-image: url(/portfolio/assets/pattern3.png);
+    background-image: url(/portfolio/assets/so-white-pattern.png);
     margin-bottom: 10vh;
 }
 
@@ -15,7 +15,7 @@ body{
     height: 20vh;
     width: 100%;
     padding-top: 3vh;
-    background-color: rgb(255, 255, 255);
+    background-color: none;
 
 }
 
@@ -50,30 +50,37 @@ hr{
                         "bio1 bio3";
     width: 95%;
     height: 90vh;
-    background-color: rgba(102, 78, 76, 1);  
+    background-color: #ce796b;  
 }
 
 .bio1 {
- grid-area: bio1;  
+    margin: 2vh;
+    grid-area: bio1;  
+    background-color: #e7ad99;
+
 }
 
 .bio1>img{
-    margin-top: 4vh;
-    margin-left: 5vh;
-    height: 90%;
+    margin-top: 2vh;
+    padding-left: 5vh;
+    height: 95%;
 }
 
 
 .bio2 {
     margin-top: 3vh;
+    padding-left: 10vh;
     font-size: 34pt;
-    color: black;
-    text-decoration: underline;
+    color: #ece2d0;
+    margin-bottom: 15vh;
+    margin-right: 3vh;
+    border-bottom: 1px solid;
     font-family: 'Major Mono Display Regular';
 }
 
 .bio3 {
     grid-area: bio3;
+    padding-left: 2vh;
     padding-bottom: 10vh;
     line-height: 5vh;
     font-size: 16pt;

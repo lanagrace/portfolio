@@ -1,39 +1,65 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    background-color: #f7ede2;
+  background-color: #ead8cd;
 }
 
 main{
-    margin-left: 50vh;
+  margin-left: 50vh;
 }
 
 .sidebar{
-    position: fixed;
-    width: 40vh;
-    height: 100%;
-    background: #f5cac5;
+  position: fixed;
+  width: 40vh;
+  height: 100%;
+  background: #f5cac5;
+
 }
+
+hr{
+width: 80%;
+display: block;
+margin-left: 0.5em;
+margin-right: auto;
+border-style: inset;
+border-width: 0.1px;
+}
+
+h4{
+padding-left: 2vh;
+color: #f28482;
+}
+
 
 h1{
-    margin-top: 4vh;
-    margin-left: 2vh;
-    color: #f28482;
-    font-family: 'Major Mono Display Regular';
-}
-
-.contentText{
+  margin-top: 4vh;
   margin-left: 2vh;
   color: #f28482;
   font-family: 'Major Mono Display Regular';
 }
 
+.contentText{
+color: #f28482;
+line-height: 20px;
+font-size: 11pt;
+font-family: 'Major Mono Display Regular';
+margin-bottom: 8vh;
+margin-top: 10vh;
+border-width: 1px;
+margin-left: 2px;
+margin-right: 10px;
+padding-top: 2vh;
+padding-bottom: 3vh;
+padding-left: 0.5vh;
+padding-right: 5px;
+}
+
 p{
-    margin-top: 2vh;
+  margin-top: 2vh;
 }
 
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -221,61 +247,120 @@ img {vertical-align: middle;}
     to {box-shadow: none}
 }
 
-ul.socialIcons {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .socialIcons li {
-    background-color: white;
-    list-style: none;
-    display: inline-block;
-    margin: 4px;
-    border-radius: 4em;
-    overflow: hidden;
-  }
-  
-  .socialIcons li a {
-    display: block;
-    padding: 0.5em;
-    min-width: 2.28571429em;
-    max-width: 2.28571429em;
-    height: 2.28571429em;
-    white-space: nowrap;
-    line-height: 1.2em; /*it's working only when you write text with icon*/
-    transition: 0.5s;
-    text-decoration: none;
-    font-family: arial;
-    color: #fff;
-  }
-  
-  .socialIcons li i {
-    margin-left:0.1em;
-    margin-right: 1em;
-  }
-  
-  .socialIcons .digitalart i {
-    margin-left: 0.2em;
-  }
-  
-  .socialIcons li:hover a {
-    max-width: 200px;
-    padding-right: 0.3em;
-  }
-  
-  .socialIcons .photography {
-    background-color: #3d405d;
-  }
-  
-  .socialIcons .digitalart {
-    background-color: #f6bd60;
-  }
-  
-  .socialIcons .drawings {
-    background-color: #f5cac3;
-  }
-  
-  .socialIcons .uniprojects {
-    background-color: #f28482;
-  }
-  
+footer{
+  border-style: solid;
+  border-color: #f28482;
+  border-width: 1px;
+  margin-left: 2px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 0.5vh;
+}
+
+.socialIcons{
+  font-size: 17px;
+}
+
+.socialIcons > a {
+  padding: 0;
+  text-align: center;
+}
+
+.socialIcons li {
+  background-color: white;
+  list-style: none;
+  border-radius: 2em;
+  max-width: 2em;
+  height: 2em;
+  padding-top: 0.4em;
+  padding-left: 0.3em;
+  /* display:inline-block; creates one line */
+  margin: 5px;
+  overflow: hidden;
+}
+
+.socialIcons > li:hover{
+max-width: 15em;
+transition: 0.5s ease-in-out;
+padding-left: 1em;
+}
+
+.socialIcons > .digitalart {
+  padding-top: 0.5em;
+  padding-left: 0.4em;
+}
+
+.socialIcons > .photography{
+  padding-bottom: 0.1em;
+  padding-left: 0.389em;
+}
+
+.socialIcons > .home {
+  padding-top: 0.5em;
+  padding-left: 0.4em;
+}
+
+.socialIcons > .contact {
+  padding-top: 0.4em;
+  padding-left: 0.4em;
+}
+
+
+.socialIcons li a {
+  display: inline-block;
+  /* padding: 0.5em; */
+/*   min-width: 2.28571429em;
+  max-width: 2.28571429em;
+  height: 2.28571429em;*/
+  white-space: nowrap; 
+ /*  line-height: 1.2em; */ /* it's working only when you write text with icon */
+ /*  transition: 0.5s; */
+  text-decoration: none;
+  font-family: 'Major Mono Display Regular';
+  color: #fff;
+}
+
+/* centers other icons */
+.socialIcons li i {
+  margin-left:0.1em;
+  margin-right: 1em;
+}
+
+/* centers the digital art icon */
+.socialIcons .digitalart i {
+  margin-left: 0.2em;
+}
+
+
+.socialIcons .photography {
+  background-color: #3d405d;
+  display: block;
+}
+.socialIcons .home {
+  background-color: lightgrey;
+}
+
+#home{
+  color: grey;
+}
+
+#contact{
+  color: grey;
+}
+
+.socialIcons .contact {
+  background-color: lightgrey;
+}
+
+
+.socialIcons .digitalart {
+  background-color: #f6bd60;
+}
+
+.socialIcons .drawings {
+  background-color: #f5cac3;
+}
+
+.socialIcons .uniprojects {
+  background-color: #f28482;
+}
