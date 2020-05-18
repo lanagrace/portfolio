@@ -6,21 +6,25 @@
 }
 
 body{
-    align-self: center;
     background-image: url(/portfolio/assets/so-white-pattern.png);
-}
-
-.menu{
-    height: 20vh;
+    height: 100vh;
     width: 100%;
-    padding-top: 3vh;
-    background-color: none;
-
 }
+
+
+main{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    align-self: center;
+    justify-content: center; /* y axis */
+    align-items: center; /* x axis */
+}
+
+
 
 .name{
-    margin-top: 1.5vh;
-    font-size: 32pt;
+    padding-top: 2vh;
+    font-size: 45pt;
     text-align: center;
     position: relative;
     font-family: 'Major Mono Display Regular';
@@ -30,7 +34,7 @@ hr{
     width: 50%;
     /*taken from w3schools*/
     display: block;
-    margin-top: 0.5em;
+    margin-top: 2em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
@@ -38,58 +42,16 @@ hr{
     border-width: 1px;
 }
 
-.bio {
-    
-    display: grid;
-    margin: auto;
-    margin-top: 20px;
-    grid-template-columns: 2fr auto;
-    grid-template-rows: 2fr auto;
-    grid-template-areas: "bio1 bio2"
-                        "bio1 bio3";
-    width: 95%;
-    height: 90vh;
-    background-color: #ce796b;  
-}
-
-.bio1 {
-    margin: 2vh;
-    grid-area: bio1;  
-    background-color: #e7ad99;
-
-}
-
-.bio1>img{
-    margin-top: 2vh;
-    padding-left: 5vh;
-    height: 95%;
-}
-
-
-.bio2 {
-    margin-top: 3vh;
-    padding-left: 10vh;
-    font-size: 34pt;
-    color: #ece2d0;
-    margin-bottom: 15vh;
-    margin-right: 3vh;
-    border-bottom: 1px solid;
-    font-family: 'Major Mono Display Regular';
-}
-
-.bio3 {
-    grid-area: bio3;
-    padding-left: 2vh;
-    line-height: 5vh;
-    font-size: 16pt;
-    color: honeydew;
-    font-family: 'Major Mono Display Regular';
-}
-
-.menu nav {
+.menu{
+    height: 25vh;
     width: 100%;
-    height: 100px;
-    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
     position: relative;
     text-align: center;
     font-family: 'Major Mono Display Regular';
@@ -117,55 +79,95 @@ hr{
     text-decoration: underline;
 }
 
-.SocialMedia ul li {
-    list-style: none; 
-    display: inline-block;
-  }
-  
-  .SocialMedia ul li a{
-     display: block;
-     text-decoration: none;
-     font-size: 12pt;
-     font-weight: bold;
-     color: black;
-     /*space between words in menu*/
-     padding: 0 60px;
-  }
-  
-  .SocialMedia ul li a:hover {
-     color: grey;
-     text-decoration: underline;
-  }
-  
-  .anotherFooter{
-      margin-top: 5vh;
-     padding: 10px;
-     background-color: none;
-  }
-  
-  .SocialMedia {
-  
-     font-size: 30px;
-     text-align: center;
-  
-  }
-  
-  .SocialMedia > a {
-  
-     text-decoration: none;
-     color: black;
-     transition: 0.5s color;
-     padding: 0 15px;
-  }
-  
-  .SocialMedia > a:hover {
-  
-  color: grey;
-  
-  }
-  
+.Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
 
-  .NavBar{
+.formContainer{
+    width: 30vw;
+    padding: 40px;
+    background-color: #ead8ce;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Major Mono Display Regular';
+}
+
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    font-size: 28pt;
+    justify-content: space-around;
+}
+
+.formContainer > form > input,
+.formContainer > form > textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.formContainer > form > input:focus,
+.formContainer > form > textarea:focus{
+    border-color: #ead8ce;
+}
+
+#nameField, #emailField{
+    height: 30px;
+
+}
+
+#messageField{
+    resize: none;
+}
+
+#submitBTN{
+    background-color: lightgray;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+#submitBTN:hover{
+    background-color: gray;
+}
+
+
+footer{
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.socialMedia {
+
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.socialMedia > a {
+
+    text-decoration: none;
+    color: black;
+    transition: 0.5s color;
+    padding: 0 40px;
+}
+
+.socialMedia > a:hover {
+
+color: grey;
+
+}
+
+
+.NavBar{
     margin-left: 2px;
     margin-right: 10px;
     padding-top: 5px;
@@ -263,14 +265,4 @@ hr{
   
   .socialIcons .uniprojects {
     background-color: #f28482;
-  }
-
-  #wordLink{
-    text-decoration: none;
-    color: black;
-  }
-
-  #wordLink:hover{
-    color: #ead8ce;
-    text-decoration: underline;
   }

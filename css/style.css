@@ -13,6 +13,8 @@ body{
 header {
     height: 85vh;
     width: 100%;
+    margin-bottom: 5vh;
+    background-color: #ead8ce;
 }
 
 main{
@@ -20,7 +22,7 @@ main{
 }
 
 .name{
-    margin-top: 3vh;
+    padding-top: 2vh;
     font-size: 45pt;
     text-align: center;
     position: relative;
@@ -40,9 +42,8 @@ hr{
 }
 
 .menu{
-    height: 31vh;
+    height: 25vh;
     width: 100%;
-    padding-top: 3vh;
     background-color: rgb(255, 255, 255);
 
 }
@@ -222,3 +223,30 @@ ul li a:hover {
     color: grey;
     text-decoration: underline;
 }
+
+footer{
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.socialMedia {
+
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.socialMedia > a {
+
+    text-decoration: none;
+    color: black;
+    transition: 0.5s color;
+    padding: 0 40px;
+}
+
+.socialMedia > a:hover {
+
+color: grey;
+
+}
+

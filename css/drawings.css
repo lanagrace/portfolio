@@ -247,7 +247,7 @@ img {vertical-align: middle;}
     to {box-shadow: none}
 }
 
-footer{
+.NavBar{
   border-style: solid;
   border-color: #f28482;
   border-width: 1px;
@@ -363,4 +363,52 @@ padding-left: 1em;
 
 .socialIcons .uniprojects {
   background-color: #f28482;
+}
+
+
+.SocialMedia ul li {
+  list-style: none; 
+  display: inline-block;
+}
+
+.SocialMedia ul li a{
+   display: block;
+   text-decoration: none;
+   font-size: 12pt;
+   font-weight: bold;
+   color: black;
+   /*space between words in menu*/
+   padding: 0 60px;
+}
+
+.SocialMedia ul li a:hover {
+   color: grey;
+   text-decoration: underline;
+}
+
+.anotherFooter{
+   margin-left: 40vh;
+   padding: 10px;
+   background-color: none;
+}
+
+.SocialMedia {
+
+   font-size: 30px;
+   text-align: center;
+
+}
+
+.SocialMedia > a {
+
+   text-decoration: none;
+   color: black;
+   transition: 0.5s color;
+   padding: 0 15px;
+}
+
+.SocialMedia > a:hover {
+
+color: grey;
+
 }
