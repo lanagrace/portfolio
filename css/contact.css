@@ -27,6 +27,7 @@ main{
     font-size: 45pt;
     text-align: center;
     position: relative;
+    color: black;
     font-family: 'Major Mono Display Regular';
 }
 
@@ -89,13 +90,13 @@ nav {
 .formContainer{
     width: 30vw;
     padding: 40px;
-    background-color: #ead8ce;
+    background-color: #ce796b;
     border-radius: 2px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 h1{
-    color: black;
+    color: white;
     text-align: center;
     font-family: 'Major Mono Display Regular';
 }
@@ -130,13 +131,13 @@ h1{
 }
 
 #submitBTN{
-    background-color: lightgray;
+    background-color: #e7ad99;
     color: black;
     transition: background-color 0.5s;
 }
 
 #submitBTN:hover{
-    background-color: gray;
+    background-color: lightgray;
 }
 
 

@@ -81,7 +81,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #3d405d;
+  color: #f5cac3;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -337,19 +337,19 @@ padding-left: 1em;
   display: block;
 }
 .socialIcons .home {
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 #home{
-  color: grey;
+  color: lightgray;
 }
 
 #contact{
-  color: grey;
+  color: lightgray;
 }
 
 .socialIcons .contact {
-  background-color: lightgrey;
+  background-color: gray;
 }
 
 
