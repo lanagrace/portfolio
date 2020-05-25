@@ -41,14 +41,13 @@ hr{
 .bio {
     
     display: grid;
-    margin: auto;
     margin-top: 20px;
-    grid-template-columns: 2fr auto;
-    grid-template-rows: 2fr auto;
+    grid-template-columns: auto;
+    grid-template-rows:  auto;
     grid-template-areas: "bio1 bio2"
                         "bio1 bio3";
-    width: 95%;
-    height: 90vh;
+    width: 100%;
+    height: auto;
     background-color: #ce796b;  
 }
 
@@ -62,7 +61,12 @@ hr{
 .bio1>img{
     margin-top: 2vh;
     padding-left: 5vh;
-    height: 95%;
+    height: auto;
+}
+
+.width100{
+  width: 90%;
+  height: auto;
 }
 
 
@@ -71,15 +75,14 @@ hr{
     padding-left: 10vh;
     font-size: 34pt;
     color: #ece2d0;
-    margin-bottom: 15vh;
     margin-right: 3vh;
-    border-bottom: 1px solid;
     font-family: 'Major Mono Display Regular';
 }
 
 .bio3 {
     grid-area: bio3;
     padding-left: 2vh;
+    margin-bottom: 10vh;
     line-height: 5vh;
     font-size: 16pt;
     color: honeydew;
@@ -273,4 +276,110 @@ hr{
   #wordLink:hover{
     color: #ead8ce;
     text-decoration: underline;
+  }
+
+  
+  @media only screen and (min-width: 1200px) {
+
+    .bio2{
+      font-size: 35pt;
+      margin-bottom: 3vh;
+    }
+ 
+
+  .bio1{
+    height: auto;
+  }
+
+
+  .bio3{
+    font-size: 18pt;
+    margin-bottom: 0;
+  }
+
+  }
+
+  @media only screen and (max-width: 992px) {
+
+    .bio2{
+      font-size: 28pt;
+      margin-bottom: 3vh;
+    }
+ 
+
+  .bio1{
+    height: auto;
+  }
+
+
+  .bio3{
+    font-size: 10pt;
+    margin-bottom: 0;
+  }
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+
+    .bio {
+    
+      display: grid;
+      margin-top: 20px;
+      grid-template-columns: auto;
+      grid-template-rows:  auto;
+      grid-template-areas: "bio2"
+                          "bio3"
+                          "bio1";
+    }
+
+    .bio1{
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .bio2{
+      font-size: 30pt;
+    }
+
+    .bio3{
+      padding-top: 2vh;
+      font-size: 14pt;
+    }
+
+  
+  }
+  
+  @media only screen and (max-width: 576px) {
+
+    .menu ul li a{
+      padding: 0 10px;
+      font-size: 10pt;
+    }
+
+    .bio2{
+      font-size: 24pt;
+      padding: 0;
+      margin-left: 3vh;
+      justify-content: center;
+      align-items: center;
+    }
+      
+    .bio3{
+      font-size: 10pt;
+    }
+
+    .bio {
+    
+      display: grid;
+      margin-top: 20px;
+      grid-template-columns: auto;
+      grid-template-rows:  auto;
+      grid-template-areas: "bio2"
+                          "bio3"
+                          "bio1";
+    }
+
   }

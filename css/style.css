@@ -5,15 +5,22 @@
     box-sizing: border-box;
 }
 
+.width100{
+    width: 100%;
+    height: auto;
+}
+
 body{
     background-color:#ead8ce;
     background-image: url(/portfolio/assets/so-white-pattern.png);
 }
 
+
+
+
 header {
-    height: 85vh;
-    width: 100%;
-    margin-bottom: 5vh;
+    height: 100%;
+    width: auto;
     background-color: #ead8ce;
 }
 
@@ -22,8 +29,8 @@ main{
 }
 
 .name{
-    padding-top: 2vh;
-    font-size: 45pt;
+    padding-top: 3px;
+    font-size: 55pt;
     text-align: center;
     position: relative;
     font-family: 'Major Mono Display Regular';
@@ -42,7 +49,7 @@ hr{
 }
 
 .menu{
-    height: 25vh;
+    height: 30vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
 
@@ -62,12 +69,14 @@ hr{
     margin-bottom: 8vh;
     grid-gap: 25px;
     grid-template-columns: auto;
-    grid-template-rows: 4fr auto;
+    grid-template-rows: 4fr;
     grid-template-areas: "section1 right1"
                          "section2 right2"
                          "section3 right3"
                          "section4 right4";
-    width: 95%;
+    width: 100%;
+    padding-left: 5vh;
+    padding-right: 5vh;
 
 }
 
@@ -86,6 +95,7 @@ hr{
     align-items: flex-end;
 }
 
+
 .right1{
     display: flex;
     align-items: center;
@@ -94,11 +104,11 @@ hr{
     font-family: 'Major Mono Display Regular';
     color: black;
     font-size: 36pt;
+    
 }
 
 .section2 {
     grid-area: right2;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
@@ -130,7 +140,6 @@ hr{
 
 .section4 {
     grid-area: right4;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
 
@@ -194,13 +203,16 @@ hr{
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 15px;
     position: relative;
     text-align: center;
     font-family: 'Major Mono Display Regular';
-    padding-right: 20px;
 }
 
 
@@ -212,13 +224,20 @@ ul li {
 ul li a{
     display: block;
     text-decoration: none;
-    font-size: 12pt;
+    font-size: 15pt;
     font-weight: bold;
     color: black;
     /*space between words in menu*/
-    padding: 0 60px;
+  /*   padding: 0 60px; */
 }
-
+ul li .crta:hover{
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: bold;
+    color: black;
+}
 ul li a:hover {
     color: grey;
     text-decoration: underline;
@@ -226,7 +245,7 @@ ul li a:hover {
 
 footer{
     padding: 10px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .socialMedia {
@@ -250,3 +269,202 @@ color: grey;
 
 }
 
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        height: auto;
+    }
+   /*  main{
+        display: flex;
+        flex-direction: row;
+    } */
+    .right1{
+        display: none;
+    }
+    .right2{
+        display: none;
+    }
+    .right3{
+        display: none; 
+    }
+    .right4{
+        display: none;
+    }
+    .sections{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "section1 section2"
+                             "section3 section4";
+    }
+
+    .section2{
+        grid-area: section2;
+    }
+
+    .section4{
+        grid-area: section4;
+    }
+    
+    header{
+        /* height: 50vh; */
+        margin-bottom: 0;
+    }
+
+    .menu{
+        height: 20vh;
+    }
+
+    .name{
+        font-size: 38pt;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    hr{
+        margin-top: 1vh;
+    }
+
+    ul li a{
+        font-size: 10pt;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+   /*  main{
+        display: flex;
+        flex-direction: row;
+    } */
+    header{
+       /*  height: 70vh; */
+        margin: 0;
+    }
+    .right1{
+        display: none;
+    }
+    .right2{
+        display: none;
+    }
+    .right3{
+        display: none; 
+    }
+    .right4{
+        display: none;
+    }
+    .sections{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "section1 section2"
+                             "section3 section4";
+    }
+
+    .section2{
+        grid-area: section2;
+    }
+
+    .section4{
+        grid-area: section4;
+    }
+
+    .menu{
+        height: 20vh;
+    }
+
+    .name{
+        font-size: 43pt;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    hr{
+        margin-top: 1vh;
+    }
+
+    ul li a{
+        font-size: 12pt;
+    }
+
+}
+
+@media only screen and (min-width: 1370px) {
+    /*  main{
+         display: flex;
+         flex-direction: row;
+     } */
+     header{
+         height: 100%;
+         margin: 0;
+     }
+ 
+     .menu{
+         height: 30vh;
+     }
+
+     nav{
+         margin-top: 3vh;
+     }
+ 
+ }
+ 
+ @media only screen and (max-width: 576px) {
+    /*  main{
+         display: flex;
+         flex-direction: row;
+     } */
+     header{
+        /*  height: 40vh; */
+         margin: 0;
+     }
+     .right1{
+         display: none;
+     }
+     .right2{
+         display: none;
+     }
+     .right3{
+         display: none; 
+     }
+     .right4{
+         display: none;
+     }
+     .sections{
+         grid-template-columns: auto;
+         grid-template-rows: auto;
+         grid-template-areas: "section1 section2"
+                              "section3 section4";
+     }
+ 
+     .section2{
+         grid-area: section2;
+     }
+ 
+     .section4{
+         grid-area: section4;
+     }
+ 
+     .menu{
+         height: 17vh;
+     }
+ 
+     .name{
+         font-size: 24pt;
+     }
+ 
+     nav{
+         margin-top: 0;
+     }
+ 
+     hr{
+         margin-top: 1vh;
+         margin-bottom: 0;
+     }
+
+     ul li a{
+         font-size: 8pt;
+     }
+ 
+ }

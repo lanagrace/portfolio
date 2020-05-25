@@ -410,3 +410,74 @@ padding-left: 1em;
 color: grey;
 
 }
+
+@media only screen and (max-width: 992px) {
+  .sidebar{
+    width: 35vh;
+    font-size: 10pt;
+  }
+  
+  h1 {
+    font-size: 26px;
+  }
+
+  .socialIcons{
+    font-size: 15px;
+  }
+
+  #myBtn{
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main{
+    margin-left: 37vh;
+    display: inline-block;
+  }
+
+  #myBtn{
+    width: 90%;
+  }
+
+  .anotherFooter{
+    margin-top: 5vh;
+    font-size: 12px;
+  }
+
+  .SocialMedia{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .sidebar{
+    width: 24vh;
+  }
+
+  main{
+    margin-left: 26vh;
+  }
+  
+  .contentText{
+    font-size: 8pt;
+    padding-top: 3vh;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding-top: 2vh;
+    padding-left: 1vh;
+    margin: 0;
+  }  
+
+  #myBtn{
+    width: 85%;
+  }
+
+  .anotherFooter{
+    margin-left: 26vh;
+  }
+}
