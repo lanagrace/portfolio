@@ -33,7 +33,7 @@ main{
     font-size: 55pt;
     text-align: center;
     position: relative;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 hr{
@@ -101,7 +101,7 @@ hr{
     align-items: center;
     justify-content: center;
     grid-area: right1;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
     color: black;
     font-size: 36pt;
     
@@ -118,7 +118,7 @@ hr{
     align-items: center;
     justify-content: center;
     grid-area: section2;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
     color: black;
     font-size: 36pt;
 }
@@ -133,7 +133,7 @@ hr{
     align-items: center;
     justify-content: center;
     grid-area: right3;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
     color: black;
     font-size: 36pt;
 }
@@ -149,7 +149,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
     color: black;
     font-size: 36pt;
 }
@@ -190,7 +190,7 @@ hr{
     font-size: 34pt;
     color: black;
     text-decoration: underline;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 .bio3 {
@@ -199,7 +199,7 @@ hr{
     line-height: 5vh;
     font-size: 16pt;
     color: honeydew;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 nav {
@@ -212,7 +212,7 @@ nav {
     margin-top: 15px;
     position: relative;
     text-align: center;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 
@@ -328,6 +328,11 @@ color: grey;
 
     ul li a{
         font-size: 10pt;
+    }
+
+    .sections > div > a > img {
+        box-shadow: 8px 8px 15px grey;
+        border-radius:15px;
     }
 
 }

@@ -28,7 +28,7 @@ main{
     text-align: center;
     position: relative;
     color: black;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 hr{
@@ -55,7 +55,7 @@ nav {
     margin-top: 40px;
     position: relative;
     text-align: center;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
     padding-right: 20px;
 }
 
@@ -98,7 +98,7 @@ nav {
 h1{
     color: white;
     text-align: center;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 .formContainer > form{
@@ -208,7 +208,7 @@ footer{
     line-height: 1.5em; /* it's working only when you write text with icon */
     transition: 0.5s; 
     text-decoration: none;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
     color: #fff;
   }
   

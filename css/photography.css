@@ -39,14 +39,14 @@ h1{
     margin-top: 4vh;
     margin-left: 2vh;
     color: #f6bd60;
-    font-family: 'Major Mono Display Regular';
+    font-family: 'Major Mono Display', monospace;
 }
 
 .contentText{
   color: #f6bd60;
   line-height: 20px;
   font-size: 11pt;
-  font-family: 'Major Mono Display Regular';
+  font-family: 'Major Mono Display', monospace;
   margin-bottom: 8vh;
   margin-top: 10vh;
   border-width: 1px;
@@ -312,7 +312,7 @@ padding-left: 1em;
  /*  line-height: 1.2em; */ /* it's working only when you write text with icon */
  /*  transition: 0.5s; */
   text-decoration: none;
-  font-family: 'Major Mono Display Regular';
+  font-family: 'Major Mono Display', monospace;
   color: #fff;
 }
 
@@ -475,5 +475,25 @@ color: grey;
 
   .anotherFooter{
     margin-left: 26vh;
+  }
+
+  .col-2{
+    width: 20%;
+    margin: 5px;
+    font-size: 10px;
+  }
+
+  .col-1{
+    margin: 0;
+    width: 80%;
+  }
+
+  .dot{
+    height: 5px;
+    width: 5px;
+  }
+
+  .prev , .next{
+    font-size: 8px;
   }
 }
